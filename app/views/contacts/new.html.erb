@@ -15,7 +15,7 @@
 				 <%= t('title') %>
 			</span>
 
-			<label class="label-input100" for="first-name"><%= t('first_name') %></label>
+			<label class="label-input100" for="first-name"><%= t('first_name') %> *</label>
 			<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
 				<%= f.text_field :first_name, id: "first-name", class: "input100", placeholder:"#{t'fname_placeholder'}"%>
 				<span class="focus-input100"></span>
@@ -31,13 +31,13 @@
 				<span class="focus-input100"></span>
 			</div>
 
-			<label class="label-input100" for="phone"><%= t('phone_number') %></label>
+			<label class="label-input100" for="phone"><%= t('phone_number') %> *</label>
 			<div class="wrap-input100">
 				<%= f.text_field :phone_number, id: "phone_number", class: "input100", placeholder:"Eg. +1 800 000000"%>
 				<span class="focus-input100"></span>
 			</div>
 
-			<label class="label-input100" for="message"><% t('message')%> *</label>
+			<label class="label-input100" for="message"><%= t('message')%> *</label>
 			<div class="wrap-input100 validate-input" data-validate = "Message is required">
 				<%= f.text_area :message, id: "message", class: "input100", placeholder:"#{t('message_placeholder')}"%>
 				<span class="focus-input100"></span>
@@ -53,7 +53,7 @@
 		<div class="contact100-more flex-col-c-m" style="background-image: url(<%=asset_path('bg-01.jpg') %>);">
 			<div class="flex-w size1 p-b-47">
 				<div class="txt1 p-r-25">
-					<span class="lnr lnr-map-marker"></span>
+					<span class="fa fa-map-marker"></span>
 				</div>
 
 				<div class="flex-col size2">
@@ -69,7 +69,8 @@
 
 			<div class="dis-flex size1 p-b-47">
 				<div class="txt1 p-r-25">
-					<span class="lnr lnr-phone-handset"></span>
+					
+					<span class="fa fa-phone"></span>
 				</div>
 
 				<div class="flex-col size2">
@@ -85,7 +86,7 @@
 
 			<div class="dis-flex size1 p-b-47">
 				<div class="txt1 p-r-25">
-					<span class="lnr lnr-envelope"></span>
+					<span class="fa fa-envelope"></span>
 				</div>
 
 				<div class="flex-col size2">
@@ -105,10 +106,7 @@
 
 
 	<script>
-		$(".selection-2").select2({
-			minimumResultsForSearch: 20,
-			dropdownParent: $('#dropDownSelect1')
-		});
+		
 
 		 window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}

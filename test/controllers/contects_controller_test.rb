@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class ContectsControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+   test "should get new" do
+	    get contects_url
+	    assert_response :success
+   end
+   
 end
