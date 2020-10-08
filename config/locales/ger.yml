@@ -1,0 +1,10 @@
+ger:  
+  title: "Schick uns eine Nachricht"
+  first_name: "Sagen Sie uns Ihren Namen"
+  fname_placeholder: "Vorname"
+  lname_placeholder: "Nachname"
+  email: "GEBEN SIE IHRE E-MAIL ADRESSE EIN"
+  phone_number: "TELEFONNUMMER EINGEBEN"
+  message: "Botschaft"
+  send: "Nachricht senden"
+  message_placeholder: "Schreiben Sie uns eine Nachricht"
