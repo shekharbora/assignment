@@ -13,11 +13,7 @@ class ContactsController < ApplicationController
 	    else
 	      render :new
 	    end		
-	end
-
-	def set_locale
-		I18n.locale = params[:locale].present? ? params[:locale] : 'en'
-	end
+	end	
 	
 	private
 

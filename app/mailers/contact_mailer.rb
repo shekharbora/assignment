@@ -5,7 +5,7 @@ class ContactMailer < ApplicationMailer
  #method for sending email
   def contact_us_email  	
     @contact = params[:contact]  #info@ajackus.com
-    mail(to: 'chandu42011@gmail.com', subject: 'Contact Form')
+    mail(to: 'info@ajackus.com', subject: 'Contact Form')
   end
 
 end

@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
 
 	private
-
+	# set locale before_action 
 	def set_locale
 		I18n.locale = params[:locale].present? ? params[:locale] : 'en'
 	end
