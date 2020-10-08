@@ -1,24 +1,16 @@
-# README
+Please follow below Steps
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1) clone from the git
 
-Things you may want to cover:
+	git clone https://github.com/shekharbora/assignment.git
 
-* Ruby version
+2) cd assignment
 
-* System dependencies
+3) bundle install 
 
-* Configuration
+4) rails db:migrate
 
-* Database creation
+5) rails s
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://localhost:3000
