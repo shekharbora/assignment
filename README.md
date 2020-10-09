@@ -14,3 +14,19 @@ Please follow below Steps
 
 
 http://localhost:3000
+
+def countingValleys(n, s)
+	valley_count = 0
+	level = 0
+	n.times do |i|
+		if s[i].eql?('U')
+			level += 1
+			if level.eql?(0)
+                valley_count += 1
+            end
+		elsif s[i].eql?('D')
+			level -= 1
+		end
+	end
+	p valley_count
+end
